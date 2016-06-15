@@ -444,7 +444,161 @@ define( function () {
                 "width": 137,
                 "height": 75
             }
-        }
+        },
+        // 傅立叶级数
+        "f(x) = a_0 + \\sum_{n=1}^\\infty\\left(a_n\\cos \\frac{n \\pi x}{L}+b_n\\sin \\frac{n \\pi x}{L} \\right)": {
+            "pos": {
+                "x": 437,
+                "y": 0
+            },
+            "size": {
+                "width": 310,
+                "height": 73
+            }
+        },
+        // 和的展开式
+        // ({1+x})^2 = 1 + \\frac{nx}{1!} + \\frac{n(n-1)x^2}{2!}+\\cdots
+        "({1+x})^2 = 1 + \\frac{nx}{1!} + \\frac{n(n-1)x^2}{2!}+\\cdots": {
+            "pos": {
+                "x": 437,
+                "y": 0
+            },
+            "size": {
+                "width": 310,
+                "height": 73
+            }
+        },
+        // 三角恒等式1
+        // \\sin\\alpha \\pm \\sin \\beta = 2\\sin \\frac{1}{2}(\\alpha \\pm \\beta)\\cos\\frac{1}{2}(\\alpha \\mp \\beta)
+        "\\sin\\alpha \\pm \\sin \\beta = 2\\sin \\frac{1}{2}(\\alpha \\pm \\beta)\\cos\\frac{1}{2}(\\alpha \\mp \\beta)": {
+            "pos": {
+                "x": 437,
+                "y": 0
+            },
+            "size": {
+                "width": 310,
+                "height": 73
+            }
+        },
+        // 三角恒等式2
+        // \\cos\\alpha + \\cos \\beta = 2\\cos \\frac{1}{2}(\\alpha + \\beta)\\cos\\frac{1}{2}(\\alpha - \\beta)
+        "\\cos\\alpha + \\cos \\beta = 2\\cos \\frac{1}{2}(\\alpha + \\beta)\\cos\\frac{1}{2}(\\alpha - \\beta)": {
+            "pos": {
+                "x": 437,
+                "y": 0
+            },
+            "size": {
+                "width": 310,
+                "height": 73
+            }
+        },
+        // 泰勒展开式
+        // e^x = 1+\\frac{x}{1!} + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots, -\\infty < x < \\infty
+        "e^x = 1+\\frac{x}{1!} + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots, -\\infty < x < \\infty": {
+            "pos": {
+                "x": 437,
+                "y": 0
+            },
+            "size": {
+                "width": 310,
+                "height": 73
+            }
+        },
+        // 圆的面积
+        // A = \\pi r^2
+        "A = \\pi r^2": {
+            "pos": {
+                "x": 437,
+                "y": 0
+            },
+            "size": {
+                "width": 310,
+                "height": 73
+            }
+        },
+        // 极限和对数
+        "\\log_{}": {
+            "pos": {
+                "x": 3059,
+                "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+        "\\log": {
+            "pos": {
+                "x": 3059,
+                "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+        "\\lim_{}": {
+            "pos": {
+                "x": 3059,
+                "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+        "\\min_{}": {
+            "pos": {
+                "x": 3059,
+                "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+        "\\max_{}": {
+            "pos": {
+                "x": 3059,
+                "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+        "\\ln": {
+            "pos": {
+                "x": 3059,
+                "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+        "\\lim_{n\\rightarrow \\infty} \\left ( {1+ \\frac{1}{n}} \\right )^{n}": {
+            "pos": {
+                "x": 3059,
+                "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+        "\\max_{0 \\le x \\le 1}xe^{-x^2}": {
+            "pos": {
+                "x": 3059,
+                "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+
+
     };
 
 } );

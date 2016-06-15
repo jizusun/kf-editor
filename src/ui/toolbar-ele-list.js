@@ -46,7 +46,46 @@ define( function ( require ) {
                             item: {
                                 val: "a^2+b^2=c^2"
                             }
-                        } ]
+                        },
+                        // added by sunjizu@gmail.com                        
+                        {
+                            label: "傅立叶级数",
+                            item: {
+                                val: "f(x) = a_0 + \\sum_{n=1}^\\infty\\left(a_n\\cos \\frac{n \\pi x}{L}+b_n\\sin \\frac{n \\pi x}{L} \\right)"
+                            }
+                        },
+                        {
+                            label: "和的展开式",
+                            item: {
+                                val: "({1+x})^2 = 1 + \\frac{nx}{1!} + \\frac{n(n-1)x^2}{2!}+\\cdots"
+                            }
+                        },
+                        {
+                            label: "三角恒等式1",
+                            item: {
+                                val: "\\sin\\alpha \\pm \\sin \\beta = 2\\sin \\frac{1}{2}(\\alpha \\pm \\beta)\\cos\\frac{1}{2}(\\alpha \\mp \\beta)"
+                            }
+                        },
+                        {
+                            label: "三角恒等式2",
+                            item: {
+                                val: "\\cos\\alpha + \\cos \\beta = 2\\cos \\frac{1}{2}(\\alpha + \\beta)\\cos\\frac{1}{2}(\\alpha - \\beta)"
+                            }
+                        },
+                        {
+                            label: "泰勒展开式",
+                            item: {
+                                val: "e^x = 1+\\frac{x}{1!} + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots, -\\infty < x < \\infty"
+                            }
+                        },
+                        {
+                            label: "圆的面积",
+                            item: {
+                                val: "A = \\pi r^2"
+                            }
+                        },
+                        
+                        ]
                     } ]
                 } ]
             }
@@ -413,7 +452,75 @@ define( function ( require ) {
                 } ]
             }
         }
-    } ];
+    } , {
+        type: UI_ELE_TYPE.DRAPDOWN_BOX,
+        options: {
+            button: {
+                label: "极限和对数<br/>",
+                icon: {
+                    src: "assets/images/toolbar/button/lim.png",
+                    x: 0,
+                    y: 0
+                }
+            },
+            box: {
+                width: 340,
+                group: [ {
+                    /*
+                    \\log_{}
+                    \\log
+                    \\lim_{}
+                    \\min_{}
+                    \\max_{}
+                    \\ln
+                    \\lim_{n\\rightarrow \\infty} \\left ( {1+ \\frac{1}{n}} \\right )^{n}" 
+                    \\max_{0 \\le x \\le 1}xe^{-x^2}
+                    */
+                    title: "极限和对数",
+                    items: [ {
+                        title: "对数",
+                        content: [ {
+                            item: {
+                                val: "\\log_{}"
+                            }
+                        }, {
+                            item: {
+                                val: "\\log"
+                            }
+                        }, {
+                            item: {
+                                val: "\\lim_{}"
+                            }
+                        }, {
+                            item: {
+                                val: "\\min_{}"
+                            }
+                        }, {
+                            item: {
+                                val: "\\max_{}"
+                            }
+                        }, {
+                            item: {
+                                val: "\\ln"
+                            }
+                        }]
+                    }, {
+                        title: "极限",
+                        content: [ {
+                            item: {
+                                val: "\\lim_{n\\rightarrow \\infty} \\left ( {1+ \\frac{1}{n}} \\right )^{n}" 
+                            }
+                        }/*, {
+                            item: {
+                                val: "max_{0 \\le x \\le 1}xe^{-x^2}"
+                            }
+                        }*/]
+                    } ]
+                } ]
+            }
+        }
+    } 
+    ];
 
     //--------------------------------------------- 初始化特殊字符区域以外的配置项
     ( function () {
@@ -692,6 +799,7 @@ define( function ( require ) {
         return result;
 
     }
+    // window.iconConfig = config;
 
     return config;
 
