@@ -447,9 +447,10 @@ define( function () {
         },
         // 傅立叶级数
         "f(x) = a_0 + \\sum_{n=1}^\\infty\\left(a_n\\cos \\frac{n \\pi x}{L}+b_n\\sin \\frac{n \\pi x}{L} \\right)": {
+            "sprite": "preset",
             "pos": {
-                "x": 437,
-                "y": 0
+                "x": 0,
+                "y": 124
             },
             "size": {
                 "width": 310,
@@ -457,11 +458,11 @@ define( function () {
             }
         },
         // 和的展开式
-        // ({1+x})^2 = 1 + \\frac{nx}{1!} + \\frac{n(n-1)x^2}{2!}+\\cdots
         "({1+x})^2 = 1 + \\frac{nx}{1!} + \\frac{n(n-1)x^2}{2!}+\\cdots": {
+            "sprite": "preset",
             "pos": {
-                "x": 437,
-                "y": 0
+                "x": 0,
+                "y": 290
             },
             "size": {
                 "width": 310,
@@ -469,11 +470,11 @@ define( function () {
             }
         },
         // 三角恒等式1
-        // \\sin\\alpha \\pm \\sin \\beta = 2\\sin \\frac{1}{2}(\\alpha \\pm \\beta)\\cos\\frac{1}{2}(\\alpha \\mp \\beta)
         "\\sin\\alpha \\pm \\sin \\beta = 2\\sin \\frac{1}{2}(\\alpha \\pm \\beta)\\cos\\frac{1}{2}(\\alpha \\mp \\beta)": {
+            "sprite": "preset",
             "pos": {
-                "x": 437,
-                "y": 0
+                "x": 0,
+                "y": 374
             },
             "size": {
                 "width": 310,
@@ -481,11 +482,11 @@ define( function () {
             }
         },
         // 三角恒等式2
-        // \\cos\\alpha + \\cos \\beta = 2\\cos \\frac{1}{2}(\\alpha + \\beta)\\cos\\frac{1}{2}(\\alpha - \\beta)
         "\\cos\\alpha + \\cos \\beta = 2\\cos \\frac{1}{2}(\\alpha + \\beta)\\cos\\frac{1}{2}(\\alpha - \\beta)": {
+            "sprite": "preset",
             "pos": {
-                "x": 437,
-                "y": 0
+                "x": 0,
+                "y": 460
             },
             "size": {
                 "width": 310,
@@ -493,11 +494,11 @@ define( function () {
             }
         },
         // 泰勒展开式
-        // e^x = 1+\\frac{x}{1!} + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots, -\\infty < x < \\infty
         "e^x = 1+\\frac{x}{1!} + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots, -\\infty < x < \\infty": {
+            "sprite": "preset",
             "pos": {
-                "x": 437,
-                "y": 0
+                "x": 0,
+                "y": 548
             },
             "size": {
                 "width": 310,
@@ -505,11 +506,11 @@ define( function () {
             }
         },
         // 圆的面积
-        // A = \\pi r^2
         "A = \\pi r^2": {
+            "sprite": "preset",
             "pos": {
-                "x": 437,
-                "y": 0
+                "x": 0,
+                "y": 634
             },
             "size": {
                 "width": 310,
@@ -517,60 +518,66 @@ define( function () {
             }
         },
         // 极限和对数
-        "\\log_{}": {
+        "\\log_{\\placeholder}\\placeholder": {
+            "sprite": "all",
             "pos": {
-                "x": 3059,
-                "y": 0
+                "x": 8,
+                "y": 2314
             },
             "size": {
                 "width": 56,
                 "height": 75
             }
         },
-        "\\log": {
+        "\\log\\placeholder": {
+            "sprite": "all",
             "pos": {
-                "x": 3059,
-                "y": 0
+                "x": 88 ,
+                "y": 2314
             },
             "size": {
                 "width": 56,
                 "height": 75
             }
         },
-        "\\lim_{}": {
+        "\\lim_{\\placeholder}\\placeholder": {
+            "sprite": "all",
             "pos": {
-                "x": 3059,
-                "y": 0
+                "x": 168,
+                "y": 2314
             },
             "size": {
                 "width": 56,
                 "height": 75
             }
         },
-        "\\min_{}": {
+        "\\min_{\\placeholder}\\placeholder": {
+            "sprite": "all",
             "pos": {
-                "x": 3059,
-                "y": 0
+                "x": 248,
+                "y": 2314
             },
             "size": {
                 "width": 56,
                 "height": 75
             }
         },
-        "\\max_{}": {
+        "\\max_{\\placeholder}\\placeholder": {
+            "sprite": "all",
             "pos": {
-                "x": 3059,
-                "y": 0
+                "x": 328,
+                "y": 2314
             },
             "size": {
                 "width": 56,
                 "height": 75
             }
         },
-        "\\ln": {
+        "\\ln\\placeholder": {
+            "sprite": "all",
             "pos": {
-                "x": 3059,
-                "y": 0
+                "x": 408,
+                "y": 2314
             },
             "size": {
                 "width": 56,
@@ -578,27 +585,26 @@ define( function () {
             }
         },
         "\\lim_{n\\rightarrow \\infty} \\left ( {1+ \\frac{1}{n}} \\right )^{n}": {
+            "sprite": "all",
             "pos": {
-                "x": 3059,
-                "y": 0
+                "x": 8,
+                "y": 2408
             },
             "size": {
-                "width": 56,
+                "width": 103,
                 "height": 75
             }
         },
         "\\max_{0 \\le x \\le 1}xe^{-x^2}": {
+            "sprite": "all",
             "pos": {
-                "x": 3059,
-                "y": 0
+                "x": 134,
+                "y": 2408
             },
             "size": {
-                "width": 56,
+                "width": 88,
                 "height": 75
             }
         },
-
-
     };
-
 } );

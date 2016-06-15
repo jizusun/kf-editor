@@ -466,42 +466,32 @@ define( function ( require ) {
             box: {
                 width: 340,
                 group: [ {
-                    /*
-                    \\log_{}
-                    \\log
-                    \\lim_{}
-                    \\min_{}
-                    \\max_{}
-                    \\ln
-                    \\lim_{n\\rightarrow \\infty} \\left ( {1+ \\frac{1}{n}} \\right )^{n}" 
-                    \\max_{0 \\le x \\le 1}xe^{-x^2}
-                    */
                     title: "极限和对数",
                     items: [ {
                         title: "对数",
                         content: [ {
                             item: {
-                                val: "\\log_{}"
+                                val: "\\log_{\\placeholder}\\placeholder"
                             }
                         }, {
                             item: {
-                                val: "\\log"
+                                val: "\\log\\placeholder"
                             }
                         }, {
                             item: {
-                                val: "\\lim_{}"
+                                val: "\\lim_{\\placeholder}\\placeholder"
                             }
                         }, {
                             item: {
-                                val: "\\min_{}"
+                                val: "\\min_{\\placeholder}\\placeholder"
                             }
                         }, {
                             item: {
-                                val: "\\max_{}"
+                                val: "\\max_{\\placeholder}\\placeholder"
                             }
                         }, {
                             item: {
-                                val: "\\ln"
+                                val: "\\ln\\placeholder"
                             }
                         }]
                     }, {
@@ -510,11 +500,11 @@ define( function ( require ) {
                             item: {
                                 val: "\\lim_{n\\rightarrow \\infty} \\left ( {1+ \\frac{1}{n}} \\right )^{n}" 
                             }
-                        }/*, {
+                        }, {
                             item: {
-                                val: "max_{0 \\le x \\le 1}xe^{-x^2}"
+                                val: "\\max_{0 \\le x \\le 1}xe^{-x^2}"
                             }
-                        }*/]
+                        }]
                     } ]
                 } ]
             }
@@ -527,6 +517,8 @@ define( function ( require ) {
 
         var tmp = [],
             otherImageSrc = "assets/images/toolbar/other.png",
+            presetFormulaImageSrc = "assets/images/toolbar/preset_formula.png",
+            allFormulaImageSrc = "assets/images/toolbar/all_formula.png",
             currentConf = [];
 
         kity.Utils.each( config, function ( conf ) {
@@ -559,8 +551,16 @@ define( function ( require ) {
             if ( !data ) {
                 return;
             }
-
-            conf.item.img = otherImageSrc;
+            // 如果有特定的图片位置，则使用
+            if (data.hasOwnProperty('sprite')) {
+                if (data.sprite == 'all')
+                    conf.item.img = allFormulaImageSrc;
+                if (data.sprite == 'preset')
+                    conf.item.img = presetFormulaImageSrc;
+            }
+            else {
+                conf.item.img = otherImageSrc;
+            }
             conf.item.pos = data.pos;
             conf.item.size = data.size;
 
