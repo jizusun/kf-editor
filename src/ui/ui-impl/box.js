@@ -593,8 +593,13 @@ define( function ( require ) {
         // background
         var style = 'background: url( '+ data.img +' ) no-repeat ';
 
-        style += -data.pos.x + 'px ';
-        style += -data.pos.y + 'px;';
+        if (data.pos) {
+            style += -data.pos.x + 'px ';
+            style += -data.pos.y + 'px;';
+        }
+        else {
+           console.log(data);
+        }
 
         // width height
         style += ' width: ' + data.size.width + 'px;';
