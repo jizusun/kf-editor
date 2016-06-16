@@ -5,10 +5,12 @@
 当前文档工作未完善，有疑惑之处请发邮件联系我们。
 
 
+# 文档补充
+
 ## Usage
 
-* dev：需``http``协议访问``index.html``，``file``协议则显示不全
-* production: 使用``grunt build``生成压缩合并后的.js文件
+* dev环境：需``http``协议访问``index.html``，``file``协议则显示不全
+* production环境: 使用``grunt build``生成压缩合并后的.js文件
 
 
 ## API
@@ -22,6 +24,7 @@
 ## Notes on this forked version
 
 仿照百度百科公式编辑器，在已有的KityFormula Editor的基础上，增加功能
+![百度百科](https://cloud.githubusercontent.com/assets/4011348/16103817/68baaa36-33ae-11e6-8666-2f34dc4c51eb.png)
 
 
 ## UEditor:

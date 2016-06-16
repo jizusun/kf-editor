@@ -553,10 +553,12 @@ define( function ( require ) {
             }
             // 如果有特定的图片位置，则使用
             if (data.hasOwnProperty('sprite')) {
-                if (data.sprite == 'all')
+                if (data.sprite == 'all'){
                     conf.item.img = allFormulaImageSrc;
-                if (data.sprite == 'preset')
+                }
+                if (data.sprite == 'preset'){
                     conf.item.img = presetFormulaImageSrc;
+                }
             }
             else {
                 conf.item.img = otherImageSrc;
