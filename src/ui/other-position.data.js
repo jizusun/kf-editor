@@ -1,6 +1,8 @@
 /**
  * 特殊字符区域之外的icon位置和大小数据
+ * sprite这个键值对的用法，参考toolbar-ele-list.js的相关注释
  */
+
 
 define( function () {
 

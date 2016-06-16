@@ -521,8 +521,6 @@ define( function ( require ) {
 
         var tmp = [],
             otherImageSrc = "assets/images/toolbar/other.png",
-            presetFormulaImageSrc = "assets/images/toolbar/preset_formula.png",
-            allFormulaImageSrc = "assets/images/toolbar/all_formula.png",
             currentConf = [];
 
         kity.Utils.each( config, function ( conf ) {
@@ -555,13 +553,16 @@ define( function ( require ) {
             if ( !data ) {
                 return;
             }
-            // 如果有特定的图片位置，则使用
+            /*
+             在other-position.data.js中，若添加sprite这个键
+             则表明不使用other.png这个默认的sprite图，而使用其他的sprite
+            */
             if (data.hasOwnProperty('sprite')) {
                 if (data.sprite == 'all'){
-                    conf.item.img = allFormulaImageSrc;
+                    conf.item.img = "assets/images/toolbar/all_formula.png";
                 }
                 if (data.sprite == 'preset'){
-                    conf.item.img = presetFormulaImageSrc;
+                    conf.item.img ="assets/images/toolbar/preset_formula.png";
                 }
             }
             else {
