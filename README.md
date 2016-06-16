@@ -52,13 +52,10 @@
      * iframe位置： http://baike.baidu.com/editor/controls/formula/formula.html?t=1465952974147 ）
      * 使用了``mathquill``和``mathjax``
 
+## Latex 表达式
+* ![Aurora: Short introduction to LaTeX symbols and commands](http://elevatorlady.ca/doc/refcard/expressions.html)
 
-## 百度百科公式1
-   ![百度百科公式](http://baike.bdimg.com/static/editor/img/fastFormual-bg_99703d95.png)
 
-## 百度百科公式2
-   ![百度百科公式](http://baike.bdimg.com/static/editor/img/formula-symbol-all_8ecbac56.png)
-   
 ## 已经转义的latex表达式
 ```
 二次公式
@@ -82,3 +79,16 @@ A = \\pi r^2
 ```
 其他的见
 * ![formulaConfig.js](baidu_baike_formula_editor/formula_baike_files/formulaConfig_formatted.js)
+
+
+##  Known Issues
+* 不支持的（不限于）：
+  * 分段函数
+  * 矩阵
+
+## 百度百科公式1
+   ![百度百科公式](http://baike.bdimg.com/static/editor/img/fastFormual-bg_99703d95.png)
+
+## 百度百科公式2
+   ![百度百科公式](http://baike.bdimg.com/static/editor/img/formula-symbol-all_8ecbac56.png)
+   

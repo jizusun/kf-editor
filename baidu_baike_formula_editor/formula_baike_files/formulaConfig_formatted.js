@@ -370,7 +370,8 @@
         }, {
             title: "常用方括号",
             latexs: [{
-                text: "f(x) = \\left\\{ \¾gin{array}{r@{\\quad\\quad}1}-x & x<0 \\\\ x & x>0 \\ \\end{array} \\right. ",
+                // 分段函数，不支持
+                text: "f(x) = \\left\\{ \\begin{array}{r@{\\quad\\quad}1}-x & x<0 \\\\ x & x>0 \\ \\end{array} \\right. ",
                 width: "140px",
                 bposl: "-4px",
                 noVisual: true
@@ -724,28 +725,28 @@
         matrix: [{
             title: "空矩阵",
             latexs: [{
-                text: "\¾gin{matrix}\n  &  \n\\end{matrix}",
+                text: "\\begin{matrix}\n  &  \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n  \\\\ \n \n\\end{matrix}",
+                text: "\\begin{matrix}\n  \\\\ \n \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n &  & \n\\end{matrix}",
+                text: "\\begin{matrix}\n &  & \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n \\\\ \n \\\\ \n \n\\end{matrix}",
+                text: "\\begin{matrix}\n \\\\ \n \\\\ \n \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n & \\\\ \n  &  \n\\end{matrix}",
+                text: "\\begin{matrix}\n & \\\\ \n  &  \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n & & \\\\\n  & &  \n\\end{matrix}",
+                text: "\\begin{matrix}\n & & \\\\\n  & &  \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n & \\\\\n  & \\\\\n &  \n\\end{matrix}",
+                text: "\\begin{matrix}\n & \\\\\n  & \\\\\n &  \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n & & \\\\\n  &  & \\\\\n &  &  \n\\end{matrix}",
+                text: "\\begin{matrix}\n & & \\\\\n  &  & \\\\\n &  &  \n\\end{matrix}",
                 noVisual: true
             }],
             indexNum: 26
@@ -764,44 +765,44 @@
         }, {
             title: "单位矩阵",
             latexs: [{
-                text: "\¾gin{matrix}\n 1 & 0 \\\\\n 0 & 1 \n\\end{matrix}",
+                text: "\\begin{matrix}\n 1 & 0 \\\\\n 0 & 1 \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n 1 &  \\\\\n  & 1 \n\\end{matrix}",
+                text: "\\begin{matrix}\n 1 &  \\\\\n  & 1 \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n 1 & 0 & 0 \\\\\n 0  & 1 & 0 \\\\\n 0 & 0 & 1 \n\\end{matrix}",
+                text: "\\begin{matrix}\n 1 & 0 & 0 \\\\\n 0  & 1 & 0 \\\\\n 0 & 0 & 1 \n\\end{matrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{matrix}\n 1 &  &  \\\\\n   & 1 &  \\\\\n  &  & 1 \n\\end{matrix}",
+                text: "\\begin{matrix}\n 1 &  &  \\\\\n   & 1 &  \\\\\n  &  & 1 \n\\end{matrix}",
                 noVisual: true
             }],
             indexNum: 28
         }, {
             title: "括号矩阵",
             latexs: [{
-                text: "\¾gin{pmatrix}\n & \\\\\n & \n\\end{pmatrix}",
+                text: "\\begin{pmatrix}\n & \\\\\n & \n\\end{pmatrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{bmatrix}\n & \\\\\n & \n\\end{bmatrix}",
+                text: "\\begin{bmatrix}\n & \\\\\n & \n\\end{bmatrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{vmatrix}\n & \\\\\n & \n\\end{vmatrix}",
+                text: "\\begin{vmatrix}\n & \\\\\n & \n\\end{vmatrix}",
                 noVisual: true
             }, {
-                text: "\¾gin{Vmatrix}\n & \\\\\n & \n\\end{Vmatrix}",
+                text: "\\begin{Vmatrix}\n & \\\\\n & \n\\end{Vmatrix}",
                 noVisual: true
             }],
             indexNum: 29
         }, {
             title: "稀疏矩阵",
             latexs: [{
-                text: "\¾gin{pmatrix}\n  & \Íots &   \\\\ \n  \\vdots & \Ýots & \\vdots \\\\ \n  & \Íots &  \n\\end{pmatrix}",
+                text: "\\begin{pmatrix}\n  & \Íots &   \\\\ \n  \\vdots & \Ýots & \\vdots \\\\ \n  & \Íots &  \n\\end{pmatrix}",
                 width: "130px",
                 bposl: "-9px",
                 noVisual: true
             }, {
-                text: "\¾gin{bmatrix}\n  & \Íots &   \\\\ \n  \\vdots & \Ýots & \\vdots \\\\ \n  & \Íots &  \n\\end{bmatrix}",
+                text: "\\begin{bmatrix}\n  & \Íots &   \\\\ \n  \\vdots & \Ýots & \\vdots \\\\ \n  & \Íots &  \n\\end{bmatrix}",
                 width: "130px",
                 bposl: "-170px",
                 noVisual: true
