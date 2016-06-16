@@ -145,7 +145,7 @@ define( function ( require ) {
                             }
                         }, {
                             item: {
-                                val: "{\\placeholder/\\placeholder}"
+                                val: "{^{\\placeholder}/_{\\placeholder}}"
                             }
                         } ]
                     }, {
@@ -157,6 +157,10 @@ define( function ( require ) {
                         }, {
                             item: {
                                 val: "\\frac {\\Delta y}{\\Delta x}"
+                            }
+                        }, {
+                            item: {
+                                val: "\\frac{\\partial y}{\\partial x}"
                             }
                         }, {
                             item: {

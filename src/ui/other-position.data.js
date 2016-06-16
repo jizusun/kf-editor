@@ -15,10 +15,11 @@ define( function () {
                 "height": 73
             }
         },
-        "{\\placeholder/\\placeholder}": {
+        "{^{\\placeholder}/_{\\placeholder}}": {
+            "sprite": "all",
             "pos": {
-                "x": 315,
-                "y": 0
+                "x": 89,
+                "y": 9
             },
             "size": {
                 "width": 56,
@@ -69,6 +70,17 @@ define( function () {
             "pos": {
                 "x": 1128,
                 "y": 0
+            },
+            "size": {
+                "width": 56,
+                "height": 75
+            }
+        },
+        "\\frac{\\partial y}{\\partial x}": {
+            "sprite": "all",
+            "pos": {
+                "x": 166,
+                "y": 106
             },
             "size": {
                 "width": 56,

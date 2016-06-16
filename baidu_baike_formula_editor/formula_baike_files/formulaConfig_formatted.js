@@ -12,11 +12,11 @@
             latexs: [{
                 text: "\\frac{dy}{dx}"
             }, {
-                text: "\\frac{ \Þlta y}{ \Þlta x}"
+                text: "\\frac{ \\Delta y}{ \\Delta x}"
             }, {
                 text: "\\frac{\\partial y}{\\partial x}"
             }, {
-                text: "\\frac{\Þlta y}{\Þlta x}"
+                text: "\\frac{\\delta y}{\\delta x}"
             }, {
                 text: "\\frac{\\pi}{2}"
             }],
