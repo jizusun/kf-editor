@@ -81,4 +81,4 @@ e^x = 1+\\frac{x}{1!} + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots, -\\infty < 
 A = \\pi r^2
 ```
 其他的见
-* ![formulaConfig.js](baidu_baike_formula_editor\formula_baike_files\formulaConfig_formatted.js)
+* ![formulaConfig.js](baidu_baike_formula_editor/formula_baike_files/formulaConfig_formatted.js)
