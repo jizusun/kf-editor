@@ -79,15 +79,6 @@ a^2+b^2=c^2
 e^x = 1+\\frac{x}{1!} + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots, -\\infty < x < \\infty
 圆的面积
 A = \\pi r^2
-
-极限和对数
-\log_{}
-\log
-\lim_{}
-\min_{}
-\max_{}
-\ln
-\li m_{n\rightarrow \infty} \left ( {1+ \frac{1}{n}} \right )^{n}" title="\lim_{n\rightarrow \infty} \left ( {1+ \frac{1}{n}} \right )^{n}
-\max_{0 \le x \le 1}xe^{-x^2}
-
 ```
+其他的见
+* ![formulaConfig.js](baidu_baike_formula_editor\formula_baike_files\formulaConfig_formatted.js)

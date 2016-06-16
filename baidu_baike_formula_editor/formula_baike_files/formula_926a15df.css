@@ -1,0 +1,297 @@
+li {
+    float: left;
+    list-style: none
+}
+* {
+    margin: 0;
+    padding: 0
+}
+.wrapper {
+    height: 255px
+}
+.BkeToolbar_structure_btn {
+    float: left;
+    border: 1px solid #ccc;
+    height: 40px
+}
+.symbol-controller {
+    width: 30px;
+    float: left
+}
+.editwrapper {
+    clear: both;
+    width: 775px;
+    height: 260px;
+    border: 1px solid #dadada!important;
+    border-top: none!important;
+    position: absolute;
+    left: 1px;
+    text-align: left;
+    word-break: break-all
+}
+.struct-lay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #fff
+}
+.toolbar {
+    width: 780px;
+    height: 86px;
+    border: 1px solid #dadada;
+    border-top: 0;
+    overflow: hidden;
+    background: url(images/formula-bar-bg_cefcdb21.png) left top repeat-x
+}
+.symbol {
+    height: 86px;
+    width: 213px;
+    padding-top: 7px;
+    padding-left: 6px;
+    float: left;
+    background: url(images/formula_split_8a12632f.png) right top no-repeat
+}
+.symbol-list {
+    overflow: hidden;
+    height: 58px
+}
+.symbol-list-wrapper {
+    width: 160px;
+    height: 63px;
+    padding-left: 8px;
+    padding-top: 8px;
+    border: 1px solid #d8d8d8;
+    border-right: 0;
+    float: left;
+    overflow: hidden
+}
+.symbol-lay li, .symbol-list li {
+    float: left;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    cursor: pointer
+}
+.symbol-lay li div, .symbol-list li div {
+    width: 24px;
+    height: 24px;
+    background: url(images/formulaSybom_5a20c9be.png) 0 0 no-repeat
+}
+.symbol-control {
+    float: left;
+    width: 18px;
+    height: 72px
+}
+.symbol-control a {
+    display: block;
+    width: 18px;
+    height: 24px;
+    background: url(images/symbol_control_btn_0bfa30dc.png) 0 0 no-repeat
+}
+.symbol-control a.symbol-down {
+    background-position: 0 -24px
+}
+.symbol-control a.symbol-unfold {
+    background-position: 0 -47px;
+    height: 25px
+}
+.symbol-upper:hover {
+    background-position: 0 -72px
+}
+.symbol-control a.symbol-down:hover {
+    background-position: 0 -96px
+}
+.symbol-control a.symbol-unfold:hover {
+    background-position: 0 -119px
+}
+.formula-arrow {
+    text-align: center;
+    height: 18px;
+    cursor: pointer
+}
+.formula-arrow a {
+    display: inline-block;
+    background: url(images/formula_down_5978fce9.png) no-repeat;
+    width: 5px;
+    height: 13px
+}
+.structure {
+    float: left;
+    width: 560px;
+    height: 86px
+}
+.structure-list {
+    height: 79px;
+    padding-top: 7px
+}
+.structure ul li {
+    height: 73px;
+    width: 45px;
+    float: left;
+    cursor: pointer;
+    background: url(images/formula-struct-bg_ea586f30.png) 0 0 no-repeat
+}
+#str_upplower {
+    background-position: -45px 0
+}
+#str_radical {
+    background-position: -90px 0
+}
+#str_integral {
+    background-position: -135px 0
+}
+#str_boperator {
+    background-position: -180px 0;
+    width: 67px
+}
+#str_brackets {
+    background-position: -247px 0
+}
+#str_fun {
+    background-position: -292px 0
+}
+#str_derivative {
+    width: 55px;
+    background-position: -337px 0
+}
+#str_limit {
+    width: 67px;
+    background-position: -392px 0
+}
+#str_operator {
+    background-position: -459px 0
+}
+#str_matrix {
+    background-position: -504px 0
+}
+.structure ul li.struct-hover {
+    background-position-y: -73px!important;
+    -ms-background-position-y: -73px!important
+}
+.structure ul li.struct-click {
+    background-position-y: -146px!important;
+    -ms-background-position-y: -146px!important
+}
+.struct-pupop {
+    border: 1px solid #c4c4c4;
+    width: 310px;
+    height: 204px;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+.struct-pupop li {
+    background-image: url(images/formula-symbol-all_8ecbac56.png);
+    background-repeat: no-repeat;
+    position: relative
+}
+.struct-pupop div {
+    clear: both
+}
+.symbol-lay h5, .struct-pupop h5 {
+    font-family: '宋体';
+    color: #666;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #f5f5f5;
+    padding-left: 7px;
+    margin-bottom: 8px
+}
+.struct-pupop ul {
+    padding-left: 7px
+}
+.struct-pupop li {
+    margin-left: 7px;
+    margin-bottom: 8px
+}
+.struct-pupop li a {
+    display: inline-block;
+    width: 59px;
+    height: 66px;
+    border: 1px solid #cdcdcd
+}
+.struct-pupop li a:hover {
+    border: 1px solid #b2d2e6
+}
+.symbol-lay {
+    width: 185px;
+    height: 185px;
+    position: absolute;
+    border: 1px solid #c4c4c4;
+    top: 39px;
+    left: 8px;
+    background-color: #fff;
+    overflow-y: scroll;
+    display: none
+}
+.symbol-lay ul {
+    padding-left: 7px
+}
+.disabledLatex {
+    position: absolute;
+    width: 100%;
+    height: 97%;
+    left: 0;
+    top: 0;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    z-index: 100;
+    background-color: #e6e6e6;
+    display: none
+}
+.tab-header {
+    border-bottom: 1px solid #b2daff;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 772px
+}
+.tab-header li {
+    background: url(images/dialogselectedtab.gif) repeat-x;
+    border: 1px solid #e7ecf0;
+    border-bottom: 0;
+    color: #0163af;
+    cursor: pointer;
+    height: 27px;
+    font-size: 14px;
+    float: left;
+    padding: 0 12px;
+    position: relative;
+    margin-right: 10px;
+    zoom: 1;
+    font-family: '宋体'
+}
+.tab-header li.selected {
+    background: #fbfbfb;
+    border: 1px solid #b2daff;
+    border-bottom-color: #fbfbfb;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    color: #333
+}
+#MathInput, #box {
+    width: 780px;
+    height: 130px;
+    border: 1px solid #dadada!important;
+    display: none
+}
+#box {
+    overflow: hidden;
+    visibility: hidden
+}
+#MathOutput {
+    font-size: 1.2em
+}
+#disableTip {
+    position: absolute;
+    border: 1px solid #e7e7e7;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    padding: 2px;
+    z-index: 101;
+    width: 120px;
+    display: none;
+    color: #666;
+    background-color: #e6e6e6
+}
